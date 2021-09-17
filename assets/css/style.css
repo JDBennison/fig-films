@@ -15,7 +15,19 @@ body{
 
 .home-nav-bar {
     z-index: 1000;
+    position: relative;
     color: white;
+    margin-top: 15vh
+}
+
+
+
+.home-font {
+    font-size: 3em;
+}
+
+.link-light {
+    text-decoration: none;
 }
 
 ul {
@@ -24,7 +36,9 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     list-style: none;
+    padding-left: 0;
 }
+
 
 .cb-slideshow,
 .cb-slideshow:after { 
