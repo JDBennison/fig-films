@@ -21,13 +21,17 @@ body{
 }
 
 
-
 .home-font {
     font-size: 3em;
 }
 
 .link-light {
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.link-light:hover {
+    color: #cecece;
 }
 
 ul {
