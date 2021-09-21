@@ -124,3 +124,13 @@ ul {
 	opacity: 1;
 }
 
+/* --------------------------------------- About Page */
+
+.about-text {
+    text-align: justify;
+}
+
+.about-picture {
+    max-width: 80%;
+    max-height: auto;
+}
