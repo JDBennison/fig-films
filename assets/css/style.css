@@ -134,3 +134,17 @@ ul {
     max-width: 80%;
     max-height: auto;
 }
+
+.about-heading {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fig-picture {
+    max-width: 80%;
+    max-height: auto;
+}
+
+.blockquote {
+    font-size: inherit;
+    font-style: italic;
+}
