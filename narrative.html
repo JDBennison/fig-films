@@ -39,7 +39,98 @@
             </div>
           </nav>
     </header>
-
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="py-5">Narrative Films</h1>
+          </div>
+        </div>
+        <div class="row" id="gallery" >
+          <div class="col-12 col-md-4 card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#tfcModal">
+            <img class="w-100" src="/assets/images/TFC-Still.png">
+            <div class="card-img-overlay">
+              <p class="card-text">The Forgotten C | Narrative Short | 2020</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#octopusModal">
+            <img class="w-100" src="/assets/images/Octopus-Still.jpeg">
+            <div class="card-img-overlay">
+              <p class="card-text">Octopus | Narrative Short | 2021</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#homeModal">
+            <img class="w-100" src="/assets/images/Home-Still.png">
+            <div class="card-img-overlay">
+              <p class="card-text">Home | Narrative Short | 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="tfcModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12 col-sm-6 my-auto">
+                  <img src="/assets/images/TFC-Still.png" alt="The Forgotten C" class="w-100">
+                </div>
+                <div class="col-12 col-sm-6 my-auto about-text lg-lh">
+                  <p class=" fst-italic">The pandemic crawls on and Aisha shields in her flat. Doorstep visits mark the passing weeks as she struggles with what it means to live her last few weeks of life during lockdown.</p>
+                  <p>In 2019, the Uncertain Kingdom was born - a commission of 20 films to be released in 2020 that reflected on what Britain meant today. The pandemic halted the cinema release but the commissioners decided to commission a 21st film that offered a unique perspective on the pandemic. Jessi and Molly Manning Walker (co-writer and director) wrote The Forgotten C, based on Jessi’s personal experience of shielding during lockdown with incurable cancer. It won the commission and had an extremely successful online release, partnering with Maggie’s cancer charity. It was later nominated for the BIFA Best British Short Award in 2020, and has since screened at various film festivals such as the BFI’s Woman with A Movie Camera summit and Brainchild. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="octopusModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12 col-sm-6 my-auto">
+                  <img src="/assets/images/Octopus-Still.jpeg" alt="Octopus" class="w-100">
+                </div>
+                <div class="col-12 col-sm-6 my-auto about-text lg-lh">
+                  <p class=" fst-italic">A disabled queer woman goes back to her hometown for the funeral of a close friend, having moved away and started a family. Feeling discarded, her explosive best friend accuses her of abandoning them. A bold confession has the power to change the course of their friendship.
+                  </p>
+                  <p>Written and directed by Ella Glendining and commissioned by the BFI Network Short Film Fund. A comedy-drama currently in post-production, with a festival run planned for 2022. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="homeModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12 col-sm-6 my-auto">
+                  <img src="/assets/images/Home-Still.png" alt="Home" class="w-100">
+                </div>
+                <div class="col-12 col-sm-6 my-auto about-text lg-lh">
+                  <p class=" fst-italic">How does it feel to be free? Best friends Kay and Jenna are reuniting after being separated by prison. But reigniting what they had before isn’t straightforward.</p>
+                  <p>Written and directed by Nia Childs and in partnership with Clean Break. A drama shot on 16mm and with a cast that has lived experience of the criminal justice system. In late development with production planned for Spring 2022.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="container-fluid bg-light py-3">
         <div class="row">
@@ -52,5 +143,13 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
+
+      myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+      })
+    </script>
 </body>
 </html>

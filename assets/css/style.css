@@ -148,3 +148,21 @@ ul {
     font-size: inherit;
     font-style: italic;
 }
+
+
+/* --------------------------------------- Narrative Page */
+
+#gallery img {
+    height: 75vw;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px){
+    #gallery img {
+        height: 18vw;
+    }
+}
+
+.card-img-overlay {
+    top: auto;
+}
