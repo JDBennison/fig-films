@@ -93,30 +93,37 @@ ul {
 } */
 
 .cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/Home-Still.png) 
-}
-.cb-slideshow li:nth-child(2) span { 
     background-image: url(../images/TFC-Still.png);
+}
+
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../images/UTTCI-Still.jpg);
     animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-    background-image: url(../images/UTTCI-Still.jpg);
+    background-image: url(../images/BASAB-Still.jpg);
     animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
-    background-image: url(../images/BASAB-Still.jpg);
-    animation-delay: 18s; 
-}
-.cb-slideshow li:nth-child(5) span { 
     background-image: url(../images/Octopus-Still.jpeg);
+    animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../images/HBT-Still.jpg);
     animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../images/Home-Still.png);
+    animation-delay: 30s;
 }
 
 
 @keyframes imageAnimation { 
     0% { opacity: 0; animation-timing-function: ease-in; }
-    10% { opacity: 1; transform: scale(1.05); animation-timing-function: ease-out; }
-    20% { opacity: 1; transform: scale(1.1); }
+    8% { opacity: 1; transform: scale(1.05); animation-timing-function: ease-out; }
+    17% { opacity: 1; transform: scale(1.1); }
     25% { opacity: 0; transform: scale(1.1); }
     100% { opacity: 0 }
 }

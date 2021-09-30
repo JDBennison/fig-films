@@ -41,26 +41,26 @@
     </header>
     <section class="pb-5">
       <div class="container mb-5">
-        <div class="row pt-5" id="gallery" >
-          <div class="col-12 col-md-4 mb-2">
-            <div class="card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#tfcModal">
-              <img class="w-100" src="assets/images/TFC-Still.png">
+        <div class="row pt-5" id="gallery" data-bs-toggle="modal" data-bs-target="#carouselModal">
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/TFC-Still.png" data-bs-target="#carouselNarrative" data-bs-slide-to="0">
               <div class="card-img-overlay">
                 <p class="card-text">The Forgotten C | Narrative Short | 2020</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mb-2">
-            <div class="card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#octopusModal">
-              <img class="w-100" src="assets/images/Octopus-Still.jpeg">
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/Octopus-Still.jpeg" data-bs-target="#carouselNarrative" data-bs-slide-to="1">
               <div class="card-img-overlay">
                 <p class="card-text">Octopus | Narrative Short | 2021</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mb-2">
-            <div class="card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#homeModal">
-              <img class="w-100" src="assets/images/Home-Still.png">
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/Home-Still.png" data-bs-target="#carouselNarrative" data-bs-slide-to="2">
               <div class="card-img-overlay">
                 <p class="card-text">Home | Narrative Short | 2022</p>
               </div>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade" id="tfcModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -76,55 +76,56 @@
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-12 col-md-6 my-auto">
-                  <img src="assets/images/TFC-Still.png" alt="The Forgotten C" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto about-text lg-lh">
-                  <p class=" fst-italic">The pandemic crawls on and Aisha shields in her flat. Doorstep visits mark the passing weeks as she struggles with what it means to live her last few weeks of life during lockdown.</p>
-                  <p>In 2019, the Uncertain Kingdom was born - a commission of 20 films to be released in 2020 that reflected on what Britain meant today. The pandemic halted the cinema release but the commissioners decided to commission a 21st film that offered a unique perspective on the pandemic. Jessi and Molly Manning Walker (co-writer and director) wrote The Forgotten C, based on Jessi’s personal experience of shielding during lockdown with incurable cancer. It won the commission and had an extremely successful online release, partnering with Maggie’s cancer charity. It was later nominated for the BIFA Best British Short Award in 2020, and has since screened at various film festivals such as the BFI’s Woman with A Movie Camera summit and Brainchild. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="octopusModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12 col-md-6 my-auto">
-                  <img src="assets/images/Octopus-Still.jpeg" alt="Octopus" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto about-text lg-lh">
-                  <p class=" fst-italic">A disabled queer woman goes back to her hometown for the funeral of a close friend, having moved away and started a family. Feeling discarded, her explosive best friend accuses her of abandoning them. A bold confession has the power to change the course of their friendship.
-                  </p>
-                  <p>Written and directed by Ella Glendining and commissioned by the BFI Network Short Film Fund. A comedy-drama currently in post-production, with a festival run planned for 2022. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="homeModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-12 col-md-6 my-auto">
-                  <img src="assets/images/Home-Still.png" alt="Home" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto about-text lg-lh">
-                  <p class=" fst-italic">How does it feel to be free? Best friends Kay and Jenna are reuniting after being separated by prison. But reigniting what they had before isn’t straightforward.</p>
-                  <p>Written and directed by Nia Childs and in partnership with Clean Break. A drama shot on 16mm and with a cast that has lived experience of the criminal justice system. In late development with production planned for Spring 2022.</p>
+                <div id="carouselNarrative" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/TFC-Still.png" class="d-block w-75 mx-auto mb-3" alt="The Forgotten C">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">The pandemic crawls on and Aisha shields in her flat. Doorstep visits mark the passing weeks as she struggles with what it means to live her last few weeks of life during lockdown.</p>
+                            <p>
+                              In 2019, the Uncertain Kingdom was born - a commission of 20 films to be released in 2020 that reflected on what Britain meant today. The pandemic halted the cinema release but the commissioners decided to commission a 21st film that offered a unique perspective on the pandemic. Jessi and Molly Manning Walker (co-writer and director) wrote The Forgotten C, based on Jessi’s personal experience of shielding during lockdown with incurable cancer. It won the commission and had an extremely successful online release, partnering with Maggie’s cancer charity. It was later nominated for the BIFA Best British Short Award in 2020, and has since screened at various film festivals such as the BFI’s Woman with A Movie Camera summit and Brainchild. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/Octopus-Still.jpeg" class="d-block w-75 mx-auto mb-3" alt="Octopus" >
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">A disabled queer woman goes back to her hometown for the funeral of a close friend, having moved away and started a family. Feeling discarded, her explosive best friend accuses her of abandoning them. A bold confession has the power to change the course of their friendship.</p>
+                            <p>
+                              Written and directed by Ella Glendining and commissioned by the BFI Network Short Film Fund. A comedy-drama currently in post-production, with a festival run planned for 2022. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/Home-Still.png" class="d-block w-75 mx-auto mb-3" alt="Home">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">How does it feel to be free? Best friends Kay and Jenna are reuniting after being separated by prison. But reigniting what they had before isn’t straightforward.</p>
+                            <p>
+                              Written and directed by Nia Childs and in partnership with Clean Break. A drama shot on 16mm and with a cast that has lived experience of the criminal justice system. In late development with production planned for Spring 2022.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselNarrative" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselNarrative" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>

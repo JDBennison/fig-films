@@ -41,66 +41,105 @@
     </header>
     <section class="pb-5">
       <div class="container mb-5">
-        <div class="row pt-5" id="gallery" >
-          <div class="col-12 col-md-4 mb-2">
-            <div class="card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#uttciModal">
-              <img class="w-100" src="assets/images/UTTCI-Still.jpg">
+        <div class="row pt-5" id="gallery" data-bs-toggle="modal" data-bs-target="#carouselModal">
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/HBT-Still.jpg" data-bs-target="#carouselDocumentary" data-bs-slide-to="0">
               <div class="card-img-overlay">
-                <p class="card-text">Until The Tide Creeps In | Documentary Short | 2021</p>
+                <p class="card-text">The Home for Broken Toys | Documentary Short | 2019</p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mb-2">
-            <div class="card bg-dark text-white" data-bs-toggle="modal" data-bs-target="#basabModal">
-              <img class="w-100" src="assets/images/BASAB-Still.jpg">
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/UTTCI-Still.jpg" data-bs-target="#carouselDocumentary" data-bs-slide-to="1">
               <div class="card-img-overlay">
-                <p class="card-text">Blind as a Beat | Documentary Short | 2021</p>
+                <p class="card-text">Until The Tide Creeps In | Documentary Short | 2021
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mb-2">
+            <div class="card bg-dark text-white">
+              <img class="w-100" src="assets/images/BASAB-Still.jpg" data-bs-target="#carouselDocumentary" data-bs-slide-to="2">
+              <div class="card-img-overlay">
+                <p class="card-text">Blind as a Beat | Documentary Short | 2021
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="uttciModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body mt-5">
+            <div class="modal-body">
               <div class="row">
-                <div class="col-12 col-md-6 my-auto">
-                  <img src="assets/images/UTTCI-Still.jpg" alt="Until The Tide Creeps In" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto about-text lg-lh">
-                  <p class="fst-italic">Three Canvey Islanders try to prevent a major disaster from destroying their home. Playing with fiction, time and trauma, this hybrid documentary imagines their dystopian future.</p>
-                  <p>A Doc Society/Made of Truth commission and co-production with Beehive Films. A festival run and local impact campaign is planned for 2022.</p>
+                <div id="carouselDocumentary" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/HBT-Still.jpg" class="d-block w-75 mx-auto mb-3" alt="The Home for Broken Toys">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">
+                              Every weekend through the winter, a group of middle-aged men, who dub themselves the East German Ladies Swimming Team, plunge into the freezing waters of a pond in central London. 'The Home for Broken Toys' follows the team through one season to explore their motivations for braving the extreme cold each week, a decision which seems alien to the filmmaker. The reasons she discovers are by turns comedic, poignant, and profound.
+                            </p>
+                            <p>
+                              An ethnographic documentary which delves into themes of masculinity, vulnerability and mental health. Directed and produced by Holly, it was developed as part of UCL’s Open City Documentary Masters programme and executive produced by Richard Alwyn. Multi-festival award winner including People’s Choice at Kendal Mountain Festival 2019 (attended by 20k people) and Best Cinematography at Southampton International Film Festival 2019. Screened in UK, Ireland, USA, Egypt, Pakistan and China festivals, and in UK and China cinema tours.
+                            </p>
+                            <p>
+                              Screenable as part of the Kendal Mountain Festival <a class="link-light" href="https://kendalmountainplayer.com/programs/swim-and-dive?categoryId=91129" target="_blank">Swim and Dive</a> series.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/UTTCI-Still.jpg" class="d-block w-75 mx-auto mb-3" alt="Until The Tide Creeps In" >
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">Three Canvey Islanders try to prevent a major disaster from destroying their home. Playing with fiction, time and trauma, this hybrid documentary imagines their dystopian future.
+                            </p>
+                            <p>
+                              A Doc Society/Made of Truth commission and co-production with Beehive Films. A festival run and local impact campaign is planned for 2022.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/BASAB-Still.jpg" class="d-block w-75 mx-auto mb-3" alt="Blind as a Beat">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12">
+                            <p class=" fst-italic">A tale of grief and hope as an ex-filmmaker grapples with sight loss and learning to interpret the world through sound.</p>
+                            <p>
+                              In 2021 Aesthetica and Audible announced The Listening Pitch. A single short film commission with a brief for stories that demonstrate how listening gives us different points of view and ideas. Audio had to be central to the narrative. Jessi and her mum Liz Jackson won the commission with their co-directed project Blind as a Beat. They have experimented with voiceover that acts as audio description for visually impaired audiences, as a way of developing more creative accessibility. The film will have its world premiere as part of a special event at Aesthetica Short Film Festival in November 2021.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDocumentary" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselDocumentary" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="basabModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body mt-5">
-              <div class="row">
-                <div class="col-12 col-md-6 my-auto">
-                  <img src="assets/images/BASAB-Still.jpg" alt="Blind as a Beat" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto about-text lg-lh">
-                  <p class=" fst-italic">A tale of grief and hope as an ex-filmmaker grapples with sight loss and learning to interpret the world through sound.</p>
-                  <p>In 2021 Aesthetica and Audible announced The Listening Pitch. A single short film commission with a brief for stories that demonstrate how listening gives us different points of view and ideas. Audio had to be central to the narrative. Jessi and her mum Liz Jackson won the commission with their co-directed project Blind as a Beat. They have experimented with voiceover that acts as audio description for visually impaired audiences, as a way of developing more creative accessibility. The film will have its world premiere as part of a special event at Aesthetica Short Film Festival in November 2021.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
