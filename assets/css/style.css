@@ -202,5 +202,9 @@ ul {
 }
 
 .uttci-image {
-    margin-bottom: 0;
+    object-position: center bottom;
+}
+
+.hbt-image {
+    object-position: 0px -25vh;
 }
