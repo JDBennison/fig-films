@@ -18,6 +18,19 @@ body{
     margin-top: 15vh
 }
 
+.home-logo {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .home-logo {
+        width: 70%;
+    }
+    .home-font {
+        font-size: 2em!important;
+    }
+}
+
 .nav-link {
     text-transform: uppercase;
 }
