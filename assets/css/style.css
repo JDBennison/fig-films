@@ -224,6 +224,48 @@ ul {
     object-position: 0px -25vh;
 }
 
+
+@media screen and (min-width: 992px){
+        .home-image {
+        object-position: 0px -330px;
+    }
+}
+
+@media screen and (max-width: 992px){
+        .home-image {
+        object-position: center;
+    }
+}
+
+@media screen and (min-width: 992px){
+        .forgotten-c-image {
+        object-position: 0px -175px;
+    }
+}
+
+@media screen and (max-width: 992px){
+        .forgotten-c-image {
+        object-position: center;
+    }
+}
+
+.csi-image {
+    object-position: top;
+}
+
+@media screen and (min-width: 768px){
+        .not-dying-image {
+        object-position: 0px -50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+        .not-dying-image {
+        object-position: 0px -10px;
+    }
+}
+
+
 /* --------------------------------------- Screenings Section */
 
 .timeline-item {
