@@ -248,9 +248,9 @@ ul {
 }
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .home-image {
-        object-position: 0px -330px;
+        object-position: 0px -100px;
     }
 }
 
@@ -272,9 +272,19 @@ ul {
     }
 }
 
-.csi-image {
-    object-position: top;
+
+@media screen and (min-width: 768px) {
+    .csi-image {
+        object-position: 0px -80px;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .csi-image {
+        object-position: center;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     .not-dying-image {
