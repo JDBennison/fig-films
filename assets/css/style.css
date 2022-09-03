@@ -274,12 +274,24 @@ ul {
 
 
 @media screen and (min-width: 768px) {
-    .csi-image {
-        object-position: 0px -80px;
+    .cuc-image {
+        object-position: 0px -100px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .cuc-image {
+        object-position: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .csi-image {
+        object-position: 0px -7rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
     .csi-image {
         object-position: center;
     }
