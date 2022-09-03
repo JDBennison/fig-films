@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fig Films</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/FigFilmsBanner.png" alt="Fig Films" class="nav-logo my-auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="films.html">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clients.html">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="manifesto.html">Manifesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="pb-5">
+        <div class="container mb-5">
+            <div class="row pt-5" id="gallery" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100 home-image" src="assets/images/New Home Still 2.png"
+                            data-bs-target="#carouselDocumentary" data-bs-slide-to="0">
+                        <div class="card-img-overlay">
+                            <p class="card-text">Home | Narrative Short | 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100 uttci-image" src="assets/images/New UTTCI Still.png"
+                            data-bs-target="#carouselDocumentary" data-bs-slide-to="1">
+                        <div class="card-img-overlay">
+                            <p class="card-text">Until The Tide Creeps In | Documentary Short | 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100" src="assets/images/Octopus-Still.jpeg" data-bs-target="#carouselDocumentary"
+                            data-bs-slide-to="2">
+                        <div class="card-img-overlay">
+                            <p class="card-text">Octopus | Narrative Short | 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100" src="assets/images/New BASAB Still.jpg" data-bs-target="#carouselDocumentary"
+                            data-bs-slide-to="3">
+                        <div class="card-img-overlay">
+                            <p class="card-text">Blind as a Beat | Documentary Short | 2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100 forgotten-c-image" src="assets/images/TFC-Still.png"
+                            data-bs-target="#carouselDocumentary" data-bs-slide-to="4">
+                        <div class="card-img-overlay">
+                            <p class="card-text">The Forgotten C | Narrative Short | 2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <div class="card bg-dark text-white">
+                        <img class="w-100" src="assets/images/HBT-Still.jpg" data-bs-target="#carouselDocumentary"
+                            data-bs-slide-to="5">
+                        <div class="card-img-overlay">
+                            <p class="card-text">The Home for Broken Toys | Documentary Short | 2019
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="carouselModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div id="carouselDocumentary" class="carousel slide" data-bs-ride="carousel"
+                                data-bs-interval="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/home poster.png"
+                                                            class="d-block w-100 mx-auto mb-3" alt="Home">
+                                                        <p class=" fst-italic">
+                                                            How does it feel to be free? Best friends Kay and Jenna are
+                                                            reuniting after being separated by prison. But reigniting
+                                                            what they had before isn’t straightforward.
+                                                        </p>
+                                                        <p>
+                                                            Written and directed by Nia Childs, produced by Jessi and
+                                                            casted
+                                                            in partnership with Clean Break, who work with actors
+                                                            with lived experience of the criminal justice system. A
+                                                            drama
+                                                            shot on 16mm and a global film festival release planned
+                                                            for 2022-2023.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/Copy of UTTCI_300_RGB.jpg"
+                                                            class="d-block w-100 mx-auto mb-3"
+                                                            alt="Until The Tide Creeps In">
+                                                        <p class=" fst-italic">Three Canvey Islanders try to prevent a
+                                                            major
+                                                            disaster from destroying
+                                                            their home. Playing with fiction, time and trauma, this
+                                                            hybrid
+                                                            documentary imagines their
+                                                            dystopian future.
+                                                        </p>
+                                                        <p>
+                                                            A Doc Society/Made of Truth commission and co-production
+                                                            with
+                                                            Beehive Films. The documentary takes an experimental
+                                                            hybrid form and is the result of a three year journalistic
+                                                            investigation into the story by Jessi - who also wrote and
+                                                            directed the film. It had its World Premiere at Edinburgh
+                                                            International Film Festival 2022, playing in competition for
+                                                            the McLaren Award for Best Short Film.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/PW_Octopus_300_RGB.jpg"
+                                                            class="d-block w-100 mx-auto mb-3" alt="Octopus">
+                                                        <p class=" fst-italic">A disabled queer woman goes back to her
+                                                            hometown for the funeral of a close friend, having moved
+                                                            away
+                                                            and started a
+                                                            family. Feeling discarded, her explosive best friend accuses
+                                                            her
+                                                            of abandoning them. A bold confession has the power to
+                                                            change the course of their friendship.</p>
+                                                        <p>
+                                                            Written and directed by Ella Glendining, produced by Jessi
+                                                            and
+                                                            commissioned by the BFI Network Short Film Fund. A
+                                                            comedy-drama which had its World Premiere at BFI Flare in
+                                                            2022.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/BASAB_300_RGB.jpg"
+                                                            class="d-block w-100 mx-auto mb-3" alt="Blind as a Beat">
+                                                        <p class=" fst-italic">A tale of grief and hope as an
+                                                            ex-filmmaker
+                                                            grapples with sight loss
+                                                            and learning to interpret the world through sound.</p>
+                                                        <p>
+                                                            In 2021 Aesthetica and Audible announced The Listening
+                                                            Pitch. A
+                                                            single short film commission
+                                                            with a brief for stories that demonstrate how listening
+                                                            gives us
+                                                            different points of view
+                                                            and ideas. Audio had to be central to the narrative. Jessi
+                                                            and
+                                                            her mum Liz Jackson won the
+                                                            commission with their co-directed project Blind as a Beat.
+                                                            They
+                                                            have experimented with
+                                                            voiceover that acts as audio description for visually
+                                                            impaired
+                                                            audiences, as a way of
+                                                            developing more creative accessibility. The film will have
+                                                            its
+                                                            world premiere as part of a
+                                                            special event at Aesthetica Short Film Festival in November
+                                                            2021.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/TheForgottenC.jpg"
+                                                            class="d-block w-100 mx-auto mb-3" alt="The Forgotten C">
+                                                        <p class=" fst-italic">The pandemic crawls on and Aisha shields
+                                                            in
+                                                            her flat. Doorstep visits mark the passing weeks as she
+                                                            struggles with what
+                                                            it means to live her last few weeks of life during lockdown.
+                                                        </p>
+                                                        <p>
+                                                            In 2019, the Uncertain Kingdom was born - a commission of 20
+                                                            films to be released in 2020 that reflected on what Britain
+                                                            meant today. The pandemic halted the cinema release but the
+                                                            commissioners decided to commission a 21st film that offered
+                                                            a unique perspective on the pandemic. Jessi and Molly
+                                                            Manning
+                                                            Walker (co-writer and director) wrote The Forgotten C,
+                                                            based on Jessi’s personal experience of shielding during
+                                                            lockdown with incurable cancer. It won the commission and
+                                                            had
+                                                            an extremely successful online release, partnering with
+                                                            Maggie’s
+                                                            cancer charity. It was later nominated for the BIFA
+                                                            Best British Short Award in 2020, and has since screened at
+                                                            various film festivals such as the BFI’s Woman with A Movie
+                                                            Camera summit and Brainchild. The Forgotten C was acquired
+                                                            by
+                                                            the Wellcome Trust in 2022.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="col-10 offset-1">
+                                                        <img src="assets/images/THFBT Landscape_2022.jpg"
+                                                            class="d-block w-100 mx-auto mb-3"
+                                                            alt="The Home for Broken Toys">
+                                                        <p class=" fst-italic">Every weekend through the winter, a group
+                                                            of
+                                                            middle-aged men, who dub themselves the East German Ladies
+                                                            Swimming Team,
+                                                            plunge into the freezing waters of a pond in central London.
+                                                            'The Home for Broken Toys' follows the team through one
+                                                            season to explore their motivations for braving the extreme
+                                                            cold
+                                                            each week, a decision which seems alien to the
+                                                            filmmaker. The reasons she discovers are by turns comedic,
+                                                            poignant, and profound.</p>
+                                                        <p>
+                                                            An ethnographic documentary which delves into themes of
+                                                            masculinity, vulnerability and mental health. Directed and
+                                                            produced by Holly, it was developed as part of UCL’s Open
+                                                            City
+                                                            Documentary Masters programme and executive produced by
+                                                            Richard Alwyn. Multi-festival award winner including
+                                                            People’s
+                                                            Choice at Kendal Mountain Festival 2019 (attended by 20k
+                                                            people) and Best Cinematography at Southampton International
+                                                            Film Festival 2019. Screened in UK, Ireland, USA, Egypt,
+                                                            Pakistan and China festivals, and in UK and China cinema
+                                                            tours.
+                                                        </p>
+                                                        <p>Screenable as part of the Kendal Mountain Festival <a
+                                                                class="link-light"
+                                                                href="https://kendalmountainplayer.com/programs/swim-and-dive?categoryId=91129"
+                                                                target="_blank">Swim and Dive</a>
+                                                            series.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselDocumentary" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselDocumentary" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

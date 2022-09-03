@@ -23,5 +23,9 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Visual Studio Dark",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+   "editor.defaultFormatter": "HookyQR.beautify",
+   "livePreview.defaultPreviewPath": "/Users/james_bennison/Desktop/vscode/fig_films/development-fig-films/clients.html",
+   "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+   }
 }
